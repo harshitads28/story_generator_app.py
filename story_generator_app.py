@@ -14,7 +14,7 @@ from transformers import pipeline, set_seed
 # Load the generator
 @st.cache_resource
 def load_generator():
-    return pipeline('text-generation', model='EleutherAI/gpt-neo-125M')
+    return pipeline('text-generation', model='distilgpt2')
 
 generator = load_generator()
 
